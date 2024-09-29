@@ -9,4 +9,18 @@ The goal of JSHunter is to find JavaScript files associated with an URL for reco
 - Using fuzzing tools such as FFUF to find unlinked content based on SecLists and generated worldlists.
 - Using AI (yes, I know, sorry) to generate common backup and rename filenames based on the found linked set of filenames.
 
-Based on these methods, JSHunter requires other tools as pre-requists.
+Based on these methods, JSHunter requires other tools as pre-requists. These include:
+
+- Gau
+- Hakrawler
+- SecLists
+- FFUF
+
+The high level approach to this tool is as follows:
+
+1. Find linked JavaScript files live on the target.
+2. Find current and historical linked content.
+3. Find dormant renamed content.
+4. Find JavaScript content based on Wordlists.
+
+The directory names and filenames of linked live files on the target are then used as a basis to generate potential renamed files. If configured, we get OpenAI to halucinate an additional renamed wordlist.
