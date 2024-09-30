@@ -9,6 +9,7 @@ The goal of JSHunter is to find JavaScript files associated with an URL for reco
 - Using fuzzing tools such as [FFUF](https://github.com/ffuf/ffuf) to find unlinked content based on SecLists and generated worldlists.
 - Using AI (yes, I know, sorry) to ~~generate~~ halucinate common backup and rename filenames based on the found linked set of filenames.
 - Using [JQ](https://jqlang.github.io/jq/) to parse json output.
+- Using [httpx](https://github.com/projectdiscovery/httpx) to confirm endpoints.
 
 Based on these methods, JSHunter requires other tools as pre-requists. These include:
 
