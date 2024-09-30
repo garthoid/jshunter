@@ -1,5 +1,7 @@
 # jshunter
 
+
+```bash
    _      _                                  
   (_)    | |                _                
    _  ___| | _  _   _ ____ | |_  ____  ___  _
@@ -7,7 +9,7 @@
   | |___ | | | | |_| | | | | |_( (/ /| |     
  _| (___/|_| |_|\____|_| |_|\___)____)_|     
 (__/ @garthoid 2024                        
-
+```
 
 A Tool to search for linked and unlinked JavaScript files on a target. It is losely based on [ScriptHunter](https://github.com/robre/scripthunter). 
 
