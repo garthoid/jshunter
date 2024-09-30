@@ -1,4 +1,14 @@
 # jshunter
+
+   _      _                                  
+  (_)    | |                _                
+   _  ___| | _  _   _ ____ | |_  ____  ___  _
+  | |/___) || \| | | |  _ \|  _)/ _  )/ ___) 
+  | |___ | | | | |_| | | | | |_( (/ /| |     
+ _| (___/|_| |_|\____|_| |_|\___)____)_|     
+(__/ @garthoid 2024                        
+
+
 A Tool to search for linked and unlinked JavaScript files on a target. It is losely based on [ScriptHunter](https://github.com/robre/scripthunter). 
 
 The goal of JSHunter is to find JavaScript files associated with an URL for reconnaissance purposes using a variety of methods. Methods include:
@@ -10,14 +20,6 @@ The goal of JSHunter is to find JavaScript files associated with an URL for reco
 - Using AI (yes, I know, sorry) to ~~generate~~ halucinate common backup and rename filenames based on the found linked set of filenames.
 - Using [JQ](https://jqlang.github.io/jq/) to parse json output.
 - Using [httpx](https://github.com/projectdiscovery/httpx) to confirm endpoints.
-
-Based on these methods, JSHunter requires other tools as pre-requists. These include:
-
-- Gau
-- Hakrawler
-- SecLists
-- FFUF
-- JQ 
 
 The high level approach to this tool is as follows:
 
