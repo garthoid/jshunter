@@ -3,11 +3,12 @@ A Tool to search for linked and unlinked JavaScript files on a target. It is los
 
 The goal of JSHunter is to find JavaScript files associated with an URL for reconnaissance purposes using a variety of methods. Methods include:
 
-- Using Gau to find content from WayBackMachine, CommonCrawl, and AlienVaults's Open Threat Exchange.
-- Using hawrawler to find live linked content on the target site.
-- Using SecLists to fuzz for common JavaScript filesnames with fuzzing tools.
-- Using fuzzing tools such as FFUF to find unlinked content based on SecLists and generated worldlists.
-- Using AI (yes, I know, sorry) to generate common backup and rename filenames based on the found linked set of filenames.
+- Using [Gau](https://github.com/lc/gau) to find content from WayBackMachine, CommonCrawl, and AlienVaults's Open Threat Exchange.
+- Using [Hawrawler](https://github.com/hakluke/hakrawler) to find live linked content on the target site.
+- Using [SecLists](https://github.com/danielmiessler/SecLists) to fuzz for common JavaScript filesnames with fuzzing tools in known directories on the target.
+- Using fuzzing tools such as [FFUF](https://github.com/ffuf/ffuf) to find unlinked content based on SecLists and generated worldlists.
+- Using AI (yes, I know, sorry) to -generate- halucinate common backup and rename filenames based on the found linked set of filenames.
+- Using JQ to parse json output.
 
 Based on these methods, JSHunter requires other tools as pre-requists. These include:
 
@@ -15,6 +16,7 @@ Based on these methods, JSHunter requires other tools as pre-requists. These inc
 - Hakrawler
 - SecLists
 - FFUF
+- JQ 
 
 The high level approach to this tool is as follows:
 
