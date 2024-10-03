@@ -27,7 +27,8 @@ The high level approach to this tool is as follows:
 
 1. Find linked JavaScript files live on the target.
 2. Find current and historical linked content.
-3. Find dormant renamed content.
-4. Find JavaScript content based on Wordlists.
+3. Find dormant unlinked JavaScript files based on SecList wordlists.
+4. Find dormant unlinked JavaScript files from AI halucinating wordlists based on known linked files. 
+
 
 The directory names and filenames of linked live files on the target are then used as a basis to generate potential renamed files. If configured, we get OpenAI to halucinate an additional renamed wordlist.
