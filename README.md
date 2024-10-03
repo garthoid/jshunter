@@ -123,4 +123,5 @@ xmlStockCheckPayload.js
 - Add other AIs.
 - Add other wordlist sources or user provided wordlists.
 - Improve the halucination prompt.
-- 
+- Tidy temporary files upon exit.
+- Option for results in user provided file.
